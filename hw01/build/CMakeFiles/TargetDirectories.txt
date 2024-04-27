@@ -1,0 +1,4 @@
+C:/Users/Administrator/Documents/GitHub/course/hw01/build/CMakeFiles/main.dir
+C:/Users/Administrator/Documents/GitHub/course/hw01/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Administrator/Documents/GitHub/course/hw01/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Administrator/Documents/GitHub/course/hw01/build/stbiw/CMakeFiles/stbiw.dir

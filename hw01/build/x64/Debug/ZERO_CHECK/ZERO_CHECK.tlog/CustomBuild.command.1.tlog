@@ -1,0 +1,10 @@
+^C:\USERS\ADMINISTRATOR\DOCUMENTS\GITHUB\COURSE\HW01\BUILD\CMAKEFILES\99CBC458D9ECC65B7949E7E2934EC965\GENERATE.STAMP.RULE
+setlocal
+D:\Cmake\bin\cmake.exe -SC:/Users/Administrator/Documents/GitHub/course/hw01 -BC:/Users/Administrator/Documents/GitHub/course/hw01/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Administrator/Documents/GitHub/course/hw01/build/hellocmake.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
