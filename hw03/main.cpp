@@ -37,8 +37,8 @@ std::variant<T1, T2> operator+(std::variant<T1, T2> const &a, std::variant<T1, T
         }, a, b);
 }
 
-template <class T1, class T2>
-std::variant<T1, T2> operator+(std::variant<T1, T2> const& a, decltype(T1{} + T2{}) const& b) {
+template <class T1, class T2, class T>
+std::variant<T1, T2> operator+(std::variant<T1, T2> const& a, T const& b) {
     std::variant<T1, T2> ret = b;
     return std::visit([&](auto const& a, auto const& ret)
         -> std::variant<T1, T2> {
