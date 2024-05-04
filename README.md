@@ -29,3 +29,14 @@
 
 ## Homework4
 优化代码技巧：将AOS转为SOA, 使用msvc下的编译优化，对结构体进行2的整数次幂对齐，使用unroll，将某些变量移动到外循环，不变量在循坏外做好预计算。
+
+## Homework5
+- 把 `login`, `register` 等函数变成多线程安全的，能利用 `shared_mutex` 区分读和写
+  
+  答：使用shared_mutex和unique_lock控制写函数, 用shared_mutex和shared_lock控制读函数，并且符合RAII。
+- 把 `login` 的登录计时器改成基于 chrono 的
+  
+  答：使用c++chrono库的相关函数
+- 让 ThreadPool::create 创建的线程保持后台运行不要退出,等待 tpool 中所有线程都结束后再退出
+  
+  答：使用一个数组，在ThreadPool析构时join每个thread
