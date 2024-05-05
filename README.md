@@ -40,3 +40,14 @@
 - 让 ThreadPool::create 创建的线程保持后台运行不要退出,等待 tpool 中所有线程都结束后再退出
   
   答：使用一个数组，在ThreadPool析构时join每个thread
+
+## Homework6
+并行for循环，对于简单的映射，a[i] = val使用parallel_for。
+
+对于求和的情况，使用parallel_reduce。
+
+对求最值的并行化，可以使用reduce来归并。
+
+对于并行筛选的情况，可使用parallel_for配合局部数组。
+
+对于要存储中间值的数组，可以使用parallel_scan。
